@@ -20,4 +20,8 @@
     }
 }
 
+- (void)nitro {
+    self.cv = 2 * self.cv;
+}
+
 @end

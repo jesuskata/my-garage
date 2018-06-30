@@ -17,5 +17,6 @@
 
 - (void)accelerate;
 - (void)accelerateNumberOfTimes:(int)numberOfTimes; // after parenthesys is known as params
+- (void)nitro;
 
 @end
