@@ -14,4 +14,10 @@
     NSLog(@"Rrrummm");
 }
 
+- (void)accelerateNumberOfTimes:(int)numberOfTimes {
+    for (int i = 1; i <= numberOfTimes; i++) {
+        NSLog(@"Rrrunnn");
+    }
+}
+
 @end
