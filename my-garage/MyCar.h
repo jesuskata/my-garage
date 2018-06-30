@@ -18,5 +18,6 @@
 - (void)accelerate;
 - (void)accelerateNumberOfTimes:(int)numberOfTimes; // after parenthesys is known as params
 - (void)nitro;
+- (void)accelerateNumberOfTimes:(int)numberOfTimes skidding:(BOOL)isSkidding;
 
 @end

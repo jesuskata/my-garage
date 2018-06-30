@@ -20,6 +20,16 @@
     }
 }
 
+- (void)accelerateNumberOfTimes:(int)numberOfTimes skidding:(BOOL)isSkidding{
+    if (!isSkidding) {
+        [self accelerateNumberOfTimes:numberOfTimes];
+    } else {
+        for (int i = 1; i <= numberOfTimes; i++) {
+            NSLog(@"Yaaaiiihhh!!!");
+        }
+    }
+}
+
 - (void)nitro {
     self.cv = 2 * self.cv;
 }

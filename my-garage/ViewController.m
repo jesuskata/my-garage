@@ -28,6 +28,8 @@
     [car1 nitro];
     NSLog(@"My car is a %@ and it has a power of %d cv", car1.brand, car1.cv);
     
+    [car1 accelerateNumberOfTimes:5 skidding:YES];
+    [car1 accelerateNumberOfTimes:4 skidding:NO];
     /* car1 = nil;
     NSLog(@"My car is a %@ and it has a power of %d cv", car1.brand, car1.cv); */
 }
