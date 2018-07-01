@@ -20,4 +20,6 @@
 - (void)nitro;
 - (void)accelerateNumberOfTimes:(int)numberOfTimes skidding:(BOOL)isSkidding;
 
+- (int)wattsPower;
+
 @end

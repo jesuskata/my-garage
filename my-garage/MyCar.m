@@ -9,6 +9,7 @@
 #import "MyCar.h"
 
 @implementation MyCar
+const int CV_TO_W = 735;
 
 - (void)accelerate {
     NSLog(@"Rrrummm");
@@ -20,7 +21,7 @@
     }
 }
 
-- (void)accelerateNumberOfTimes:(int)numberOfTimes skidding:(BOOL)isSkidding{
+- (void)accelerateNumberOfTimes:(int)numberOfTimes skidding:(BOOL)isSkidding {
     if (!isSkidding) {
         [self accelerateNumberOfTimes:numberOfTimes];
     } else {
@@ -28,6 +29,11 @@
             NSLog(@"Yaaaiiihhh!!!");
         }
     }
+}
+
+- (int)wattsPower{
+    int power = CV_TO_W * self.cv;
+    return power;
 }
 
 - (void)nitro {
